@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation (same as index) -->
+    <!-- Navigation -->
     <nav class="navbar">
-        <!-- Copy the entire nav from index.html -->
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="index.html">Blush & Bloom</a>
@@ -42,65 +41,281 @@
         </div>
     </nav>
 
-    <!-- Gallery Hero -->
+    <!-- Gallery Hero - ENHANCED -->
     <section class="gallery-hero">
+        <div class="hero-bg-overlay"></div>
         <div class="hero-content">
+            <div class="hero-breadcrumb">
+                <a href="index.html">Home</a> 
+                <i class="fas fa-chevron-right"></i>
+                <span>Gallery</span>
+            </div>
             <h1 class="hero-title">Our Collection</h1>
-            <p class="hero-subtitle">Every piece tells a story</p>
+            <p class="hero-subtitle">Every piece tells a story of elegance and timeless beauty</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">18+</span>
+                    <span class="stat-label">Styles</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">New</span>
+                    <span class="stat-label">Arrivals</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Handpicked</span>
+                </div>
+            </div>
+            <a href="#gallery" class="cta-button">Explore Collection</a>
+        </div>
+        <div class="hero-scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
+    <h1>Explore Our Various Styles</h1>
 
-    <!-- Gallery Grid -->
-    <section class="gallery-section">
+    <!-- Gallery Grid - 18 IMAGES -->
+    <section class="gallery-section" id="gallery">
         <div class="container">
             <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="images\WhatsApp Image 2026-03-16 at 22.18.20 (1).jpeg" alt="Dress 1">
+                <div class="gallery-item" data-category="dress">
+                    <img src="images\WhatsApp Image 2026-03-16 at 22.18.20 (1).jpeg" alt="Summer Breeze Dress">
                     <div class="gallery-overlay">
-                        <h3>Summer Breeze Dress</h3>
-                        <p>$129</p>
+                        <div class="overlay-content">
+                            <h3>Summer Breeze Dress</h3>
+                            <p class="price">$129</p>
+                        </div>
+                    </div>
+                    <div class="gallery-hover">
+                        <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=600&h=800&fit=crop" alt="Dress 2">
+
+                <div class="gallery-item" data-category="dress">
+                    <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=600&h=800&fit=crop" alt="Elegant Evening Gown">
                     <div class="gallery-overlay">
-                        <h3>Elegant Evening Gown</h3>
-                        <p>$189</p>
+                        <div class="overlay-content">
+                            <h3>Elegant Evening Gown</h3>
+                            <p class="price">$189</p>
+                        </div>
+                    </div>
+                    <div class="gallery-hover">
+                        <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1596770527539-086c646e2b72?w=600&h=800&fit=crop" alt="Blazer">
+
+                <div class="gallery-item" data-category="outerwear">
+                    <img src="https://images.unsplash.com/photo-1596770527539-086c646e2b72?w=600&h=800&fit=crop" alt="Classic Blazer">
                     <div class="gallery-overlay">
-                        <h3>Classic Blazer</h3>
-                        <p>$199</p>
+                        <div class="overlay-content">
+                            <h3>Classic Blazer</h3>
+                            <p class="price">$199</p>
+                        </div>
+                    </div>
+                    <div class="gallery-hover">
+                        <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600&h=800&fit=crop" alt="Skirt">
+
+                <div class="gallery-item" data-category="bottoms">
+                    <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600&h=800&fit=crop" alt="High Waist Skirt">
                     <div class="gallery-overlay">
-                        <h3>High Waist Skirt</h3>
-                        <p>$79</p>
+                        <div class="overlay-content">
+                            <h3>High Waist Skirt</h3>
+                            <p class="price">$79</p>
+                        </div>
+                    </div>
+                    <div class="gallery-hover">
+                        <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="images\WhatsApp Image 2026-03-16 at 22.18.20 (2).jpeg" alt="Top">
+
+                <div class="gallery-item" data-category="tops">
+                    <img src="images\WhatsApp Image 2026-03-16 at 22.18.20 (2).jpeg" alt="Silk Chiffon Top">
                     <div class="gallery-overlay">
-                        <h3>Silk Chiffon Top</h3>
-                        <p>$89</p>
+                        <div class="overlay-content">
+                            <h3>Silk Chiffon Top</h3>
+                            <p class="price">$89</p>
+                        </div>
+                    </div>
+                    <div class="gallery-hover">
+                        <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1598033124236-39cd02611e13?w=600&h=800&fit=crop" alt="Dress 3">
+
+                <div class="gallery-item" data-category="dress">
+                    <img src="https://images.unsplash.com/photo-1598033124236-39cd02611e13?w=600&h=800&fit=crop" alt="Velvet Midi Dress">
                     <div class="gallery-overlay">
-                        <h3>Velvet Midi Dress</h3>
-                        <p>$159</p>
+                        <div class="overlay-content">
+                            <h3>Velvet Midi Dress</h3>
+                            <p class="price">$159</p>
+                        </div>
+                    </div>
+                    <div class="gallery-hover">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="tops">
+                    <img src="https://images.unsplash.com/photo-1599646224667-9c95a1c14e8c?w=600&h=800&fit=crop" alt="Floral Blouse">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Floral Blouse</h3>
+                            <p class="price">$69</p>
+                        </div>
+                    </div>
+                    <div class="gallery-hover">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="dress">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=800&fit=crop" alt="Wrap Maxi Dress">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Wrap Maxi Dress</h3>
+                            <p class="price">$149</p>
+                        </div>
+                    </div>
+                    <div class="gallery-hover">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="bottoms">
+                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=600&h=800&fit=crop" alt="Wide Leg Pants">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Wide Leg Pants</h3>
+                            <p class="price">$99</p>
+                        </div>
+                    </div>
+                    <div class="gallery-hover">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="outerwear">
+                    <img src="https://images.unsplash.com/photo-1607785446661-25ca1dc79886?w=600&h=800&fit=crop" alt="Classic Trench">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Classic Trench</h3>
+                            <p class="price">$249</p>
+                        </div>
+                    </div>
+                    <div class="gallery-hover">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="tops">
+                    <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=600&h=800&fit=crop" alt="Silk Camisole">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Silk Camisole</h3>
+                            <p class="price">$79</p>
+                        </div>
+                    </div>
+                    <div class="gallery-hover">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="dress">
+                    <img src="https://images.unsplash.com/photo-1578499931414-58c3b697751a?w=600&h=800&fit=crop" alt="Off-Shoulder Dress">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Off-Shoulder Dress</h3>
+                            <p class="price">$139</p>
+                        </div>
+                    </div>
+                    <div class="gallery-hover">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="bottoms">
+                    <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600&h=800&fit=crop" alt="Tailored Pants">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Tailored Pants</h3>
+                            <p class="price">$119</p>
+                        </div>
+                    </div>
+                    <div class="gallery-hover">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="tops">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&h=800&fit=crop" alt="Linen Shirt">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Linen Shirt</h3>
+                            <p class="price">$89</p>
+                        </div>
+                    </div>
+                    <div class="gallery-hover">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="dress">
+                    <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=600&h=800&fit=crop" alt="Satin Slip Dress">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Satin Slip Dress</h3>
+                            <p class="price">$169</p>
+                        </div>
+                    </div>
+                    <div class="gallery-hover">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="tops">
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=800&fit=crop" alt="Cashmere Sweater">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Cashmere Sweater</h3>
+                            <p class="price">$179</p>
+                        </div>
+                    </div>
+                    <div class="gallery-hover">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="bottoms">
+                    <img src="https://images.unsplash.com/photo-1588745568108-46c39a9982fd?w=600&h=800&fit=crop" alt="Leather Skirt">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Leather Skirt</h3>
+                            <p class="price">$129</p>
+                        </div>
+                    </div>
+                    <div class="gallery-hover">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="tops">
+                    <img src="https://images.unsplash.com/photo-1594708833858-5a0d4d5d6c3e?w=600&h=800&fit=crop" alt="Silk Blouse">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Silk Blouse</h3>
+                            <p class="price">$99</p>
+                        </div>
+                    </div>
+                    <div class="gallery-hover">
+                        <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer (same as index) -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
