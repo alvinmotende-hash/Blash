@@ -407,3 +407,52 @@ function initAll() {
 
 // Initialize everything when DOM is ready
 document.addEventListener('DOMContentLoaded', initAll);
+// script.js
+
+document.addEventListener("DOMContentLoaded", () => {
+  const conversationForm = document.querySelector(".conversation-form");
+
+  if (conversationForm) {
+    conversationForm.addEventListener("submit", (e) => {
+      e.preventDefault(); // prevent page reload
+
+      // Collect form values
+      const name = conversationForm.querySelector("input[type='text']").value.trim();
+      const email = conversationForm.querySelector("input[type='email']").value.trim();
+      const message = conversationForm.querySelector("textarea").value.trim();
+
+      // Simple validation
+      if (!name || !email || !message) {
+        showMessage("Please fill in all fields.", "error");
+        return;
+      }
+
+      // Basic email validation
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!email.match(emailPattern)) {
+        showMessage("Please enter a valid email address.", "error");
+        return;
+      }
+
+      // Simulate successful submission
+      showMessage("Thank you for starting a conversation! We'll get back to you soon.", "success");
+
+      // Reset form
+      conversationForm.reset();
+    });
+  }
+
+  // Function to show feedback messages
+  function showMessage(text, type) {
+    let messageBox = document.querySelector(".form-message");
+
+    if (!messageBox) {
+      messageBox = document.createElement("div");
+      messageBox.classList.add("form-message");
+      conversationForm.appendChild(messageBox);
+    }
+
+    messageBox.textContent = text;
+    messageBox.className = "form-message " + type;
+  }
+});
